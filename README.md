@@ -1,16 +1,14 @@
-# RN-flowers
---
-[1] preluare imagini
+This repository contain:
 
-[2] Decodare si redimensionare img
+# RN-flowers (flower.py & flowers.csv & flowers_test.csv)
 
-[3]Preluare trasaturi - model:tensorflow_hub: https://tfhub.dev/google/imagenet/mobilenet_v2_035_128/feature_vector/2
+# Liniar Regresion - step by step(LiniarRegresion.ipynb)
 
-[4] Genere retea: 
+# How to display a image from your folder (showImg)
 
--alegere nr neuroni inpu
--alegete nr de hidden layers
-- neuroni output
-- epoci
-- betch_size
-- clase rezultate
+
+
+
+
+
+FYI: https://github.com/ArdeleanRichard/University-Projects/tree/main/Python/MachineLearning

@@ -9,12 +9,12 @@ import numpy as np
 import os
 import csv
 import pandas as pd
-import tensorflow as tf
+import liniar_regresion as tf
 import tensorflow_hub as hub
 import math
 import matplotlib.pyplot as plt
 from PIL import Image
-from tensorflow.python.estimator import keras
+
 
 folders = ['./pictures/flower_photos/daisy',
            './pictures/flower_photos/dandelion',
