@@ -1,14 +1,23 @@
 This repository contain:
 
-# RN-flowers (flower.py & flowers.csv & flowers_test.csv)
+# Retele Neuronale(intro)
+* ReteleNeuronale_XOR.ipynb
 
-# Liniar Regresion - step by step(LiniarRegresion.ipynb)
+# RN-flowers 
+* flower.py & flowers.csv & flowers_test.csv
 
-# RN - Handwritten Digits- (RN_HandwrittenDigits.ipynb)
+# Liniar Regresion - step by step
+*LiniarRegresion.ipynb
 
-# How to display a image from your folder (showImg.py)
+# RN - Handwritten Digits- 
+*RN_HandwrittenDigits.ipynb
 
-# Retele Neuronale convolutionale: CNN_demo.ipynb
+# How to display a image from your folder 
+*showImg.py
+
+# Retele Neuronale convolutionale
+*CNN_demo.ipynb
+
 
 
 
