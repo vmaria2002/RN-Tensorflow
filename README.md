@@ -18,6 +18,8 @@ This repository contain:
 # Retele Neuronale convolutionale
 *CNN_demo.ipynb
 
+# LetterRecognition & LSTM (Long Short-Term Memory)
+
 
 
 
