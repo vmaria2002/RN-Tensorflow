@@ -1,0 +1,80 @@
+"""
+Sources: https://learn.udacity.com/courses/ud170/
+"""
+
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import datetime
+def construct_plot(dx = range(-10, 11)):
+    print(f'dx: {dx}')
+    dy = [10 ** i for i in dx]
+    print(f'dy: {dy}')
+
+    plt.scatter(dx, dy)
+    plt.xlabel('axa X')
+    plt.ylabel('axa Y')
+    plt.title('plot demo')
+    print('Afisare  plot in SciView')
+    # plt.show()
+
+    print('Salvare imagine in format .jpg')
+    current_time = datetime.datetime.now().strftime("%Y-%m-%d_%H_%M_%S")
+    print(f'Data curenta: {current_time}')
+    plt.savefig('./grafice/' + current_time + '.jpg')
+
+def dictionaries():
+    dic={'a':['mare', 'soare', 4], 'b':[10, 30, 40]}
+    print(f'Intregul dictionar: {dic}')
+    list_Key =list(dic.keys())
+    print(f"cheia de la indxul 0: {list_Key[0]}")
+    print(f"valorile de la cheia a si de index 2 dictionar: {dic['a'][1]}")
+    print("*********************************************")
+    print("Adaugarea unei valori  la valorile cheii 'a'")
+    dic['a'].append("new value")
+    print(f'noul dictionar: {dic}')
+    print("*********************************************")
+    print("inserare pe o pozitie dorita in b: ")
+    dic['b'].insert( 1, 4)
+    v = list(dic.values())
+    print(f'New values: {v[1]}')
+
+
+def functii_numpy():
+    list = [7, 1181, 5]
+    print(list)
+    print(f'Suma:{np.sum(list)}')
+    print(f'length:{np.size(list)} ')
+    print(f'Media: {np.mean(list)}')
+    print(f'Deviatia standaard: {np.std(list)}')
+    print(f'Min:{np.min(list)}')
+    print(f'Max:{np.max(list)}')
+
+def histograma():
+    list=[20, 2, 67]
+    plt.hist(list, bins=8)
+    plt.show()
+
+def numpy_function():
+    array1 = np.array(['white','green', 'cyan', 'black', 'orange'])
+    print(f'array generate from np.array: {array1}')
+    print("******************* Accesare element ******************")
+    print(f'[0:2]{array1[0:2]}')
+    print(f'[:2]{array1[:2]}')
+    print(f'[1:2]{array1[1:2]}')
+    print(f'[2:]{array1[2:]}')
+    print(f'[:]{array1[:]}')
+
+def numpy_element_types():
+    print(np.array(['sun', 'clouds']).dtype) # >U6
+    print(np.array([1, 2]).dtype)  # int32
+    print(np.array([1.87, 2.33]).dtype) # float64
+    print(np.array([True, False]).dtype) # bool
+
+
+def multiplying():
+    print(f'multilying in Pyuhon: {[1, 2]*4}')
+    print(f'multilying in NUMPY: {np.array([1, 2])*4}')
+
+multiplying()
