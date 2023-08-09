@@ -77,4 +77,65 @@ def multiplying():
     print(f'multilying in Pyuhon: {[1, 2]*4}')
     print(f'multilying in NUMPY: {np.array([1, 2])*4}')
 
-multiplying()
+def add():
+    print(f'Add in Python: {[1, 2]+[10, 20]}')
+    print(f'Add in NUMPY: {np.array([1, 2])+np.array([10, 20])}')
+
+def arithmetic_opperation():
+    a = np.array([3, 5, 7])
+    b = np.array([2, 4, 2])
+
+    print(a+b)
+    print(a-b)
+    print(a/b)
+    print(a*b)
+    print(a**b)
+def arithmetic_opperation_scalar():
+    a = np.array([3, 5, 7])
+    b = 2
+
+    print(a+b)
+    print(a-b)
+    print(a/b)
+    print(a*b)
+    print(a**b)
+
+def logic():
+    a = np.array([1, 2, 3, 4, 5])
+    b = np.array([5, 4, 3, 2, 1])
+
+    print(a > b)
+    print(a < b)
+    print(a == b)
+    print(a == b)
+    print(a != b)
+def logic2():
+    a = np.array([1, 2, 3, 4])
+    b = 2
+
+    print(a > b)
+    print(a < b)
+    print(a == b)
+    print(a == b)
+    print(a != b)
+
+
+
+def index_arrays():
+    a = np.array([1, 2, 3, 4])
+    b = np.array([True, True, False, False])
+
+    print(a[b])
+    print(a[a>3])
+
+def comp():
+    a = np.array([3, 5, 7])
+    b = np.array([2, 4, 2])
+    a+=b
+    print(a)
+
+    a = np.array([3, 5, 7])
+    b = np.array([2, 4, 2])
+    a= a+b
+    print(a)
+comp()
